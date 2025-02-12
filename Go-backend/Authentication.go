@@ -6,7 +6,7 @@ import (
 	"net/http"
 
 	firebase "firebase.google.com/go"
-	"github.com/labstack/echo/v4"
+	echo "github.com/labstack/echo/v4"
 	"google.golang.org/api/option"
 )
 
