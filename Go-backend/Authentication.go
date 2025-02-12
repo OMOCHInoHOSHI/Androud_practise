@@ -13,7 +13,7 @@ import (
 func main() {
 	ctx := context.Background()
 	// Firebase Admin SDKのサービスアカウントキーのパスを指定
-	opt := option.WithCredentialsFile("path/to/serviceAccountKey.json")
+	opt := option.WithCredentialsFile("/Users/hasimotorion/Desktop/チーム開発/sound sns/Androud_practise/google-services.json")
 	app, err := firebase.NewApp(ctx, nil, opt)
 	if err != nil {
 		log.Fatalf("Firebase Appの初期化に失敗しました: %v", err)

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "379483167134",
+    "project_id": "soundsns-10d07",
+    "storage_bucket": "soundsns-10d07.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:379483167134:android:690ba70be89ddb90089e8f",
+        "android_client_info": {
+          "package_name": "io.github.OMOCHInoHOSHI.Tokujyokaisendonn_SoundSNS"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDT_4d1iJSNJi3q46FNS16snZ0Y3dBIom4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
