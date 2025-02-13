@@ -32,7 +32,6 @@ import androidx.compose.ui.unit.sp
 
 @Composable
 fun LoginScreen(): Boolean {
-
     // ログイン結果
     val loginState by remember { mutableStateOf(false) }
     // メールアドレス
@@ -55,7 +54,7 @@ fun LoginScreen(): Boolean {
 //                    modifier = Modifier.fillMaxSize()
 //                )
 
-                // メールアドレスとパスワードの入力UI
+                // メールアドレスとパスワードの入力UIS----------------------------------------------------------------------
                 Column(
                     modifier = Modifier
                         .fillMaxSize()
@@ -63,6 +62,8 @@ fun LoginScreen(): Boolean {
                     horizontalAlignment = Alignment.CenterHorizontally,
                     verticalArrangement = androidx.compose.foundation.layout.Arrangement.Center
                 ) {
+
+                    // メアドS------------------------------------------------------------
                     Spacer(modifier = Modifier.height(16.dp))
                     Text(
                         text = "メールアドレスを入力",
@@ -75,7 +76,11 @@ fun LoginScreen(): Boolean {
                         label = { Text("メールアドレス") },
                         modifier = Modifier.fillMaxWidth()
                     )
+                    // メアドE------------------------------------------------------------
+
                     Spacer(modifier = Modifier.height(16.dp))
+
+                    // パスワード入力S------------------------------------------------------
                     Text(
                         text = "パスワードは6文字以上",
                         style = TextStyle(color = Color.White, fontSize = 14.sp),
@@ -88,23 +93,35 @@ fun LoginScreen(): Boolean {
                         visualTransformation = PasswordVisualTransformation(),
                         modifier = Modifier.fillMaxWidth()
                     )
+                    // パスワード入力E------------------------------------------------------
+
                     Spacer(modifier = Modifier.height(16.dp))
+
+                    // ログインS-----------------------------------------------------------
                     Button(
                         onClick = { /* ログイン処理 */ },
                         modifier = Modifier.fillMaxWidth()
                     ) {
                         Text("ログイン", fontSize = 18.sp)
                     }
+                    // ログインE-----------------------------------------------------------
+
                     Spacer(modifier = Modifier.height(16.dp))
+
+                    // 新規登録S-----------------------------------------------------------
                     Button(
                         onClick = { /* 新規登録処理 */ },
                         modifier = Modifier.fillMaxWidth()
                     ) {
                         Text("新規登録", fontSize = 18.sp)
                     }
+                    // 新規登録E-----------------------------------------------------------
+
                 }
             }
         }
+        // メールアドレスとパスワードの入力UIS----------------------------------------------------------------------
+
     )
 
     return loginState
